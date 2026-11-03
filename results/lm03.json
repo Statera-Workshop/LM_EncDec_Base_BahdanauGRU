@@ -1,0 +1,172 @@
+{
+ "params": 29476498,
+ "epochs": 20,
+ "capped": false,
+ "minutes": 1.7,
+ "test_loss": 3.42597192283642,
+ "test_ppl": 30.752519407159028,
+ "test_acc": 0.5800312264220052,
+ "bleu_greedy": 22.31360586842099,
+ "bleu_greedy_beam_subset": 23.894583376152116,
+ "bleu_beam": 25.307751304214953,
+ "beam_width": 4,
+ "beam_pairs": 500,
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 5.450734066963196,
+   "test_loss": 4.542083836076692,
+   "test_acc": 0.33358652847660447
+  },
+  {
+   "epoch": 2,
+   "train_loss": 3.819828200340271,
+   "test_loss": 3.6270169651990765,
+   "test_acc": 0.44744060763997023
+  },
+  {
+   "epoch": 3,
+   "train_loss": 2.70478937625885,
+   "test_loss": 3.161905689602105,
+   "test_acc": 0.5104865565724366
+  },
+  {
+   "epoch": 4,
+   "train_loss": 1.8174868017435073,
+   "test_loss": 2.9672570289044047,
+   "test_acc": 0.5450057038960238
+  },
+  {
+   "epoch": 5,
+   "train_loss": 1.1962488025426865,
+   "test_loss": 2.906866705437252,
+   "test_acc": 0.5615478754244801
+  },
+  {
+   "epoch": 6,
+   "train_loss": 0.8220710992813111,
+   "test_loss": 2.9089174268617657,
+   "test_acc": 0.5732793184721596
+  },
+  {
+   "epoch": 7,
+   "train_loss": 0.5591899886727333,
+   "test_loss": 2.968418950294449,
+   "test_acc": 0.5726463288231007
+  },
+  {
+   "epoch": 8,
+   "train_loss": 0.3684043921530247,
+   "test_loss": 3.001177203349888,
+   "test_acc": 0.5745030991381249
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.23459028229117393,
+   "test_loss": 3.045069883960045,
+   "test_acc": 0.5758534847455029
+  },
+  {
+   "epoch": 10,
+   "train_loss": 0.1484252829104662,
+   "test_loss": 3.0956904789252175,
+   "test_acc": 0.5751782969069812
+  },
+  {
+   "epoch": 11,
+   "train_loss": 0.09337088447064161,
+   "test_loss": 3.14721366008656,
+   "test_acc": 0.5793560339981239
+  },
+  {
+   "epoch": 12,
+   "train_loss": 0.061199163738638165,
+   "test_loss": 3.1871473163614072,
+   "test_acc": 0.5763598803568979
+  },
+  {
+   "epoch": 13,
+   "train_loss": 0.04430698724463582,
+   "test_loss": 3.2387524836827124,
+   "test_acc": 0.5793982489343363
+  },
+  {
+   "epoch": 14,
+   "train_loss": 0.03064483110792935,
+   "test_loss": 3.2874200301426506,
+   "test_acc": 0.5805376210826235
+  },
+  {
+   "epoch": 15,
+   "train_loss": 0.022244412545114757,
+   "test_loss": 3.3284524525097767,
+   "test_acc": 0.5787230515779863
+  },
+  {
+   "epoch": 16,
+   "train_loss": 0.017278952896595,
+   "test_loss": 3.323247826058648,
+   "test_acc": 0.5810862220143067
+  },
+  {
+   "epoch": 17,
+   "train_loss": 0.013325872481800616,
+   "test_loss": 3.352190722160341,
+   "test_acc": 0.580411022343897
+  },
+  {
+   "epoch": 18,
+   "train_loss": 0.011663330206647515,
+   "test_loss": 3.365064555292628,
+   "test_acc": 0.5810862163750438
+  },
+  {
+   "epoch": 19,
+   "train_loss": 0.010700563597492874,
+   "test_loss": 3.39110681361406,
+   "test_acc": 0.5801156267373477
+  },
+  {
+   "epoch": 20,
+   "train_loss": 0.009232164861168712,
+   "test_loss": 3.42597192283642,
+   "test_acc": 0.5800312264220052
+  }
+ ],
+ "examples": [
+  {
+   "src": "this winter has been mild .",
+   "ref": "cet hiver a ete doux .",
+   "greedy": "cette piece est en train de cette ."
+  },
+  {
+   "src": "they will be here at three .",
+   "ref": "ils seront ici a trois heures .",
+   "greedy": "ils sera ici a trois heures ."
+  },
+  {
+   "src": "i once lived in rome .",
+   "ref": "j'ai vecu un temps a rome .",
+   "greedy": "j'ai vecu de retour en arriere ."
+  },
+  {
+   "src": "schedules are difficult to coordinate .",
+   "ref": "les emplois du temps sont difficiles a coordonner .",
+   "greedy": "il est que de se marier a la creme ."
+  },
+  {
+   "src": "i came here hoping to see tom .",
+   "ref": "je suis venu ici en esperant voir tom .",
+   "greedy": "je suis venu ici pour voir tom ."
+  }
+ ],
+ "legacy_source": "C2",
+ "config": {
+  "cell": "gru",
+  "attention": "bahdanau"
+ },
+ "model": "s2s_bahdanau_gru",
+ "stage": "lm03",
+ "smoke": false,
+ "torch": "2.5.1+cu124"
+}
